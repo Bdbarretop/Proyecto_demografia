@@ -165,8 +165,8 @@ if section == "📋 Medidas de estructura":
             
             total_sexo = df_estructura.loc[0, sexo_analizar]
             youth_sexo = df_estructura.loc[1:3, sexo_analizar].sum()
-            working_sexo = df_estructura.loc[4:13, sexo_analizar].sum()
-            elderly_sexo = df_estructura.loc[14:, sexo_analizar].sum()
+            working_sexo = df_estructura.loc[4:12, sexo_analizar].sum()
+            elderly_sexo = df_estructura.loc[13:18, sexo_analizar].sum()
             
             with col1:
                 st.metric(f"👥 Total {sexo_analizar}", f"{total_sexo:,}")
