@@ -135,8 +135,8 @@ if section == "📋 Medidas de estructura":
             
             total_pob = df_estructura.loc[0, "Total"]
             youth = df_estructura.loc[1:3, "Total"].sum()
-            working = df_estructura.loc[4:13, "Total"].sum()
-            elderly = df_estructura.loc[14:, "Total"].sum()
+            working = df_estructura.loc[4:12, "Total"].sum()
+            elderly = df_estructura.loc[13:18, "Total"].sum()
             
             with col1:
                 st.metric("👥 Población Total", f"{total_pob:,}")
